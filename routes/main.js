@@ -4,4 +4,8 @@ const router = express.Router();
 
 router.get('/', tasksController.getMainPage);
 
+router.post('/', tasksController.postnewTask);
+
+router.post('/delete', tasksController.deleteTask);
+
 module.exports = router;
